@@ -1,0 +1,49 @@
+[{
+        "id": "1",
+        "link": "img/glass1.png",
+        "price": "50",
+        "name": "Sunglasses"
+    },
+    {
+        "id": "2",
+        "link": "img/glass2.png",
+        "price": "500",
+        "name": "Sunglasses"
+    },
+    {
+        "id": "3",
+        "link": "img/glass3.png",
+        "price": "950",
+        "name": "Sunglasses"
+    },
+    {
+        "id": "4",
+        "link": "img/glass4.png",
+        "price": "80",
+        "name": "Sunglasses"
+    },
+    {
+        "id": "5",
+        "link": "img/glass5.png",
+        "price": "60",
+        "name": "Sunglasses"
+    },
+    {
+        "id": "6",
+        "link": "img/glass6.png",
+        "price": "150",
+        "name": "Sunglasses"
+    },
+    {
+        "id": "7",
+        "link": "img/glass7.png",
+        "price": "200",
+        "name": "Sunglasses"
+    },
+    {
+        "id": "8",
+        "link": "img/glass8.png",
+        "price": "300",
+        "name": "Sunglasses"
+    }
+]

@@ -1,0 +1,99 @@
+.producty {
+    margin: 50px 0 100px;
+}
+
+.producty .container .imgs {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.producty .container .imgs .bigone {
+    width: 100%;
+}
+
+.producty .container .imgs .smallcont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.producty .container .imgs .smallcont img {
+    width: calc(25% - 10px);
+    cursor: pointer;
+}
+
+.producty .container .details h1 {
+    font-size: 50px;
+    margin: 0 0 10px;
+}
+
+.producty .container .details div.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: dimgrey;
+}
+
+.producty .container .details input {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #03cafc;
+    outline: none;
+    text-align: center;
+}
+
+.producty .container .details button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: #03cafc;
+    color: white;
+    cursor: pointer;
+}
+
+.producty .container .details h2 {
+    margin: 20px 0;
+}
+
+.producty .container .details p {
+    line-height: 2;
+}
+
+.producty .container .details {
+    width: 50%;
+    padding: 20px;
+    margin: auto;
+}
+
+.producty .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width:992px) {
+    .producty .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .producty .container .details {
+        width: 100%;
+    }
+    .producty .container .imgs {
+        width: 100%;
+    }
+}
+
+button {
+    display: inline-block;
+    margin: 20px;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 38px;
+    background-color: #03cafc;
+    color: white;
+    border: none;
+    outline: none;
+}

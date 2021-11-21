@@ -1,0 +1,507 @@
+/* start scrool */
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar {
+    box-shadow: inset 0 0 0px grey;
+    border-radius: 0px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #03cafc;
+    border-radius: 0px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #03cafc;
+}
+
+
+/* end scrool */
+
+
+/* start loading  */
+
+.d {
+    width: 150%;
+    height: 150%;
+    background: white;
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    right: 0;
+}
+
+.loading2 {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-top: 4px solid;
+    border-color: #03cafc transparent;
+    animation: spin .6s linear infinite;
+    display: flex;
+    top: 50%;
+    right: 50%;
+    transform: translatey(50%);
+    z-index: 999;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(359deg)
+    }
+}
+
+
+/* end loading  */
+
+
+/* start header */
+
+body {
+    background-color: #f5f6f6;
+    font-family: Google Sans;
+}
+
+.cont {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    background: white;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius: 100px;
+}
+
+.menu span {
+    margin-right: 15px;
+    font-size: 15px;
+    font-weight: bolder;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.sl {
+    color: #03cafc;
+}
+
+.menu span:hover {
+    color: #03cafc;
+}
+
+.menu span.login:hover {
+    color: white;
+    background-color: black;
+}
+
+.login {
+    background-color: #03cafc;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 100px;
+    color: white;
+}
+
+
+/* end header */
+
+
+/* start wrapper  */
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides-container {
+    height: 500px;
+    position: relative;
+    transition: 800ms cubic-bezier(0.48, 0.15, 0.18, 1);
+}
+
+.slide-image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.slide-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.next-btn,
+.prev-btn {
+    z-index: 2;
+    display: flex;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    border: 3px solid black;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    position: absolute;
+    top: 75%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.textwar {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.blue {
+    color: #03cafc;
+}
+
+.navigation-dots {
+    display: flex;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0;
+}
+
+.single-dot {
+    background-color: white;
+    height: 16px;
+    width: 16px;
+    border: 2px solid #03cafc;
+    border-radius: 50%;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: 00.4s;
+}
+
+.single-dot.active {
+    background-color: #03cafc;
+}
+
+.shop-now {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.buttom1 {
+    margin: 0;
+    padding: 20px 55px;
+    border: 2px solid black;
+    border-radius: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+    outline: none;
+}
+
+.buttom1:hover {
+    background-color: #03cafc;
+    color: white;
+    outline: none;
+}
+
+.buttom2 {
+    margin: 0;
+    padding: 20px 55px;
+    border: 2px solid white;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.buttom2:hover {
+    background-color: #03cafc;
+}
+
+.buttom3 {
+    border: none;
+    margin: 0;
+    padding: 20px 55px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: white;
+    cursor: pointer;
+    background-color: #03cafc;
+    width: 40%;
+}
+
+.buttom3:hover {
+    background-color: #1b1d1d;
+}
+
+
+/* end wrapper  */
+
+
+/* start about shop*/
+
+.aboutsh {
+    display: flex;
+    margin: 200px 50px 0px 50px;
+    padding-bottom: 90px;
+    border-bottom: 1px solid black;
+}
+
+.aboutsh h3 {
+    width: 100px;
+    margin-top: 50px;
+}
+
+.aboutsh h2 {
+    font-size: 30px;
+}
+
+.aboutsh p {
+    line-height: 30px;
+}
+
+.aboutsh img {
+    width: 500px;
+    margin-right: 75px;
+}
+
+.textabheader {
+    background-color: white;
+    border: 1px solid black;
+    padding: 31px;
+}
+
+.textabheader::before {
+    content: "";
+    background-color: black;
+    display: flex;
+    z-index: -1;
+    height: 400px;
+    width: 125px;
+    position: absolute;
+    top: 158.5%;
+    right: 15px;
+}
+
+
+/* end about shop*/
+
+
+/* start our glasses */
+
+.ourglasses {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ourglasses .textour h2 {
+    font-size: 35px;
+}
+
+.ourglasses p {
+    line-height: 30px;
+    width: 100%;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+    border: 1px solid black;
+    padding: 30px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.product img {
+    margin: 65px 0;
+}
+
+.product h2 {
+    font-weight: 100;
+    margin: 0;
+}
+
+.product .price {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.product .name {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.shopit {
+    display: flex;
+    flex-flow: wrap-reverse;
+}
+
+.ourglasses h3 {
+    margin-top: 50px;
+}
+
+
+/* end our glasses */
+
+
+/* start BesTSunGlasseS */
+
+.BesTSunGlasses {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    border: 2px solid #f5f6f6;
+}
+
+.BesTSunGlasses img {
+    width: 500px;
+    height: 500px;
+}
+
+.textbest {
+    width: 100%;
+    padding: 50px;
+    background-color: black;
+    color: white;
+}
+
+.textbest h1 {
+    width: fit-content;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+.textbest p {
+    line-height: 35px;
+}
+
+.textbest h3 {
+    width: fit-content;
+    margin-top: 90px;
+}
+
+
+/* end BesTSunGlasseS */
+
+
+/* start form */
+
+.formcont {
+    background-color: white;
+    margin-top: 100px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.formcont h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+form input {
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    width: 40%;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+
+/* end form */
+
+
+/* start footer */
+
+.foot1 {
+    display: flex;
+    background-color: #1d1d1d;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+}
+
+.foot1 .box {
+    width: 30%;
+}
+
+.foot1 .box i {
+    font-size: 45px;
+}
+
+.foot1 .box i:hover {
+    color: #03cafc;
+    transition: 0.5s;
+}
+
+.foot2 h2 {
+    text-align: center;
+    font-weight: 100;
+}
+
+.foot1 .box h3:hover {
+    color: #03cafc;
+    transition: 0.5s;
+}
